@@ -6,7 +6,7 @@ def oxford_comma(array)
   elsif array.size == 3 
     last_element = array.last
     without_last = array.remove(last_element)
-    three_word_string = array.join(", ") << " and " << last_element
+    three_word_string = without_last.join(", ") << " and " << last_element
     return three_word_string
     
     
